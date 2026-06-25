@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import Spark from './Spark'
 
 export default function Nav() {
-  const [scrolled, setScrolled] = useState(false)
+  const [, setScrolled] = useState(false)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12)
@@ -12,17 +12,17 @@ export default function Nav() {
   }, [])
 
   return (
-    <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
+    <nav className="nav">
       <div className="container nav-inner">
         <a className="brand" href="#top">
-          <Spark size={20} />
+          <Spark size={16} />
           Data Alchemy <span className="ver">4.0</span>
         </a>
         <div className="nav-links">
           <a href="#build">What you build</a>
           <a href="#schedule">The day</a>
           <a href="#faq">FAQ</a>
-          <a className="btn btn-ghost nav-cta" href="#workshop">On the day</a>
+          <a className="nav-cta" href="#workshop">On the day →</a>
         </div>
       </div>
     </nav>

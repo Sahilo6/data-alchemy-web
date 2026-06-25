@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Reveal from './Reveal'
+import SectionHead from './SectionHead'
 
 const ITEMS = [
   { q: 'Do I need an AI background?', a: 'No. If you’re comfortable with basic Python - variables, loops, functions - you have everything you need.' },
@@ -13,16 +14,14 @@ export default function FAQ() {
   return (
     <section className="section" id="faq">
       <div className="container">
-        <Reveal>
-          <p className="eyebrow">Questions</p>
-          <h2 className="section-title">Still wondering?</h2>
-        </Reveal>
-        <div className="faq">
+        <SectionHead n="04" kicker="Questions" title="Still wondering?" />
+        <div className="faq" style={{ marginTop: 26 }}>
           {ITEMS.map((it, i) => (
-            <Reveal className={`faq-item ${open === i ? 'open' : ''}`} key={it.q} delay={i * 50}>
+            <Reveal className={`faq-item ${open === i ? 'open' : ''}`} key={it.q}>
               <button className="faq-q" onClick={() => setOpen(open === i ? -1 : i)} aria-expanded={open === i}>
-                {it.q}
-                <span className="plus">+</span>
+                <span className="qn">Q{i + 1}</span>
+                <span className="qx">{it.q}</span>
+                <span className="plus">{open === i ? '–' : '+'}</span>
               </button>
               <div className="faq-a"><p>{it.a}</p></div>
             </Reveal>

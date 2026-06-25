@@ -5,6 +5,7 @@ import { useWorkshopClock, formatGap } from '../useWorkshopClock'
 import Reveal from './Reveal'
 import Spark from './Spark'
 import Icon from './Icon'
+import SectionHead from './SectionHead'
 
 export default function Workshop() {
   const clock = useWorkshopClock()
@@ -12,18 +13,14 @@ export default function Workshop() {
   return (
     <section className="section" id="workshop">
       <div className="container">
-        <Reveal style={{ textAlign: 'center' }}>
-          <p className="eyebrow" style={{ justifyContent: 'center' }}>
-            <Spark size={14} /> On the day · live hub
-          </p>
-          <h2 className="section-title">Lost the thread? Pick it back up.</h2>
-          <p className="section-lead" style={{ margin: '14px auto 0' }}>
-            Keep this tab open while you build - where the room is, when the next break is, and
-            how to unstick yourself fast.
-          </p>
-        </Reveal>
+        <SectionHead
+          n="03"
+          kicker="On the day · live hub"
+          title="Lost the thread? Pick it back up."
+          lead="Keep this tab open while you build - where the room is, when the next break is, and how to unstick yourself fast."
+        />
 
-        <Reveal delay={100} style={{ marginTop: 44 }}>
+        <Reveal delay={100} style={{ marginTop: 30 }}>
           <LiveStatus clock={clock} />
         </Reveal>
 
@@ -52,7 +49,7 @@ function LiveStatus({ clock }) {
       )}
 
       {phase === 'after' ? (
-        <div className="live-done grad-text">That’s a wrap. Go build something.</div>
+        <div className="live-done">That’s a wrap. Go build something.</div>
       ) : (
         <>
           <div className="live-target">

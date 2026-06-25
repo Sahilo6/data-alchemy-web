@@ -1,24 +1,30 @@
 import { PHASES } from '../config'
 import Reveal from './Reveal'
+import SectionHead from './SectionHead'
 
 export default function Schedule() {
   return (
     <section className="section" id="schedule">
       <div className="container">
-        <Reveal className="section-head-row">
-          <h2 className="section-title">The day, in four moves</h2>
-          <p className="section-aside">9 to 5 · roughly two-thirds building, one-third concepts.</p>
-        </Reveal>
+        <SectionHead
+          n="02"
+          kicker="The day · 9 to 5"
+          title="The programme, in four moves."
+          lead="Roughly two-thirds building, one-third concepts. Every idea is followed by you putting it into code."
+        />
 
-        <div className="phases">
+        <div className="program" style={{ marginTop: 30 }}>
           {PHASES.map((p, i) => (
-            <Reveal className={`phase ${p.blurb ? '' : 'phase-break'}`} key={p.title} delay={i * 70}>
-              <div className="phase-when">
-                <span>{p.when}</span>
-                <span className="phase-range">{p.range}</span>
+            <Reveal className={`prog-row ${p.blurb ? '' : 'is-break'}`} key={p.title}>
+              <span className="prog-num">{String(i + 1).padStart(2, '0')}</span>
+              <div className="prog-body">
+                <div className="prog-title-line">
+                  <span className="prog-title">{p.title}</span>
+                  <span className="prog-leader" />
+                  <span className="prog-time">{p.range}</span>
+                </div>
+                {p.blurb && <p className="prog-blurb">{p.blurb}</p>}
               </div>
-              <h3>{p.title}</h3>
-              {p.blurb && <p>{p.blurb}</p>}
             </Reveal>
           ))}
         </div>

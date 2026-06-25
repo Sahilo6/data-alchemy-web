@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <div className="brand">Data Alchemy <span className="ver" style={{ color: 'var(--cyan)' }}>4.0</span></div>
+            <div className="brand">Data Alchemy <span className="ver">4.0</span></div>
             <p>{EVENT.tagline} A full-day, hands-on Agentic AI workshop - build a real agent yourself.</p>
           </div>
           <div className="footer-links">
