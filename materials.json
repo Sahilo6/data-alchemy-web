@@ -1,13 +1,41 @@
 {
   "_comment": "LIVE FEED. Edit this file on github.com and the workshop site picks it up within about a minute, no rebuild needed. Paste links into 'slides' and 'notebook' as each speaker goes up. Leave a link as an empty string to show 'posting soon'. Keep the ids (s1..s4) exactly as they are.",
   "materials": [
-    { "id": "s1", "label": "Session 1", "title": "Foundations of Agentic AI",
-      "speaker": "Ankita", "slides": "", "notebook": "", "note": "" },
-    { "id": "s2", "label": "Session 2", "title": "The Agent Loop & Tool Calling",
-      "speaker": "Arnab", "slides": "", "notebook": "", "note": "" },
-    { "id": "s3", "label": "Session 3", "title": "Memory, Planning & Advanced Workflows",
-      "speaker": "Aarav", "slides": "", "notebook": "", "note": "" },
-    { "id": "s4", "label": "Session 4", "title": "Frameworks, Multi-Agent Systems & Project Build",
-      "speaker": "Avani", "slides": "", "notebook": "", "note": "" }
+    {
+      "id": "s1",
+      "label": "Session 1",
+      "title": "Foundations of Agentic AI",
+      "speaker": "Ankita",
+      "slides": "https://dataalchemy.tamvit.in/slides/session-1-foundations.pptx",
+      "notebook": "https://colab.research.google.com/github/sahilo6/data-alchemy-web/blob/gh-pages/notebooks/session-1-foundations.ipynb",
+      "note": ""
+    },
+    {
+      "id": "s2",
+      "label": "Session 2",
+      "title": "The Agent Loop & Tool Calling",
+      "speaker": "Arnab",
+      "slides": "",
+      "notebook": "",
+      "note": ""
+    },
+    {
+      "id": "s3",
+      "label": "Session 3",
+      "title": "Memory, Planning & Advanced Workflows",
+      "speaker": "Aarav",
+      "slides": "",
+      "notebook": "",
+      "note": ""
+    },
+    {
+      "id": "s4",
+      "label": "Session 4",
+      "title": "Frameworks, Multi-Agent Systems & Project Build",
+      "speaker": "Avani",
+      "slides": "",
+      "notebook": "",
+      "note": ""
+    }
   ]
 }
