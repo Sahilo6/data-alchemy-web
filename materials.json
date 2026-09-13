@@ -24,8 +24,8 @@
       "label": "Session 3",
       "title": "Memory, Planning & Advanced Workflows",
       "speaker": "Aarav",
-      "slides": "",
-      "notebook": "",
+      "slides": "https://dataalchemy.tamvit.in/slides/session-3-memory-planning.pptx",
+      "notebook": "https://colab.research.google.com/github/sahilo6/data-alchemy-web/blob/gh-pages/notebooks/session-3-memory-planning.ipynb",
       "note": ""
     },
     {
