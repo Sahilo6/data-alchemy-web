@@ -33,8 +33,8 @@
       "label": "Session 4",
       "title": "Frameworks, Multi-Agent Systems & Project Build",
       "speaker": "Avani",
-      "slides": "",
-      "notebook": "",
+      "slides": "https://dataalchemy.tamvit.in/slides/session-4-frameworks-project.pptx",
+      "notebook": "https://colab.research.google.com/github/sahilo6/data-alchemy-web/blob/gh-pages/notebooks/session-4-frameworks-project.ipynb",
       "note": ""
     }
   ]
